@@ -1,6 +1,13 @@
 
+// Takes the data attribute and turnes it into a hidden description overlay.
+$('[data-description]').each(function(){
+	$(this).html(
+		$(this).html() + '<div class="wf-description">' + $(this).data('description') + '</div>'
+	);
+});
+
 // Fades in the description on hover
-$('.description').hover(
+$('.wf-description').hover(
   function () {
     $(this).addClass('view-description');
   },
@@ -8,3 +15,5 @@ $('.description').hover(
   	$(this).removeClass('view-description');
   }
 );
+
+

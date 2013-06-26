@@ -3,31 +3,33 @@
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Designed and built with all the love in the world @twitter by @mdo and @fat.
+*/
  
- /* HTML Wireframe CSS */
- 
- /* Use for PROD */
+/* HTML Wireframe CSS */
+	.section-wrapper{padding: 50px 0px !important;}
+    .center{text-align: center;}
+    .right{text-align: right;}
+    .left{text-align: left;}
+    .margin-top{margin-top: 20px;}
+    .margin-bottom{margin-bottom: 20px;}
+    .padding{padding: 25px;}
+    .no-padding{padding: 0px !important;}
+    .padding40{padding: 40px !important;}
+    .padding-top{padding-top: 20px !important;}
+ 	.box1{background: #a7a7a7;}
+	.box2{background: #5a5a5a;}
+	.box3{background: #8a8a8a;}
+ 	.container{max-width: 1140px;}
  	
- 	
- 	
- 	div, input, button{
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
- 	}
- 	
- 	.container{
-	 	max-width: 960px;
-	 	margin: 0 auto;
-	 	height: 100%;
- 	}
+ 	*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}[class*="span"]{position:relative}.container{margin:0 auto;height:100%}.wf-description{position:absolute;top:0;left:0;padding:20px;width:100%;height:100%;background:rgba(0,0,0,.7);color:#fff;font-weight:700;font-size:35px;font-family:"Helvetica",Helvetica,Arial,"Lucida Grande",sans-serif !important;line-height:30px;opacity:0;cursor:crosshair !important;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s}.view-description{opacity:1}.large .wf-description,.medium .wf-description,.small .wf-description{line-height:1em}.large .wf-description{font-size:100px}.medium .wf-description{font-size:60px}.small .wf-description{font-size:25px}.wf-video{background-image:url(../img/play-wf.png) !important;background-position:center center !important;background-repeat:no-repeat !important}.box,.box1,.box2,.box3{position:relative;overflow:hidden;width:100%;color:#fff;font-family:'BLOKKRegular'}.black{color:#000}
  	
  	@media (max-width:1200px){
-	 	
+	 	.container{
+		 	max-width: 960px;
+	 	}
  	}
  	
  	@media (max-width:979px){
@@ -35,38 +37,10 @@
  	}
  	
  	@media (max-width:767px){
-	 	
+	 	.container{
+		 	max-width: 280px;
+	 	}
  	}
- 
- /* END Use for PROD */
- 
- .box1, .box2, .box3, .box4, .box1-1{
-	 width: 100%;
-	 font-family: 'BLOKKRegular'; 
-	 overflow: hidden;
-	 color: #fff;
-	 padding: 25px;
-	 position: relative;
- }
- 
- .box1-1{
-	 padding: 10px;
-	 color: #000;
- }
- 
- 
- .box1{
-	 background: #a7a7a7;
- }
- 
- .box2{
-	 background: #5a5a5a;
-	 padding: 0px;
- }
- 
- .box3{
-	 background: #8a8a8a;
- }
  
  /* END HTML Wireframe CSS */
  
@@ -281,13 +255,15 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+html{background-color: #ebebeb;}
+
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ebebeb;
   height: 100%;
 }
 a {
@@ -336,11 +312,10 @@ a:focus {
   min-height: 1px;
   margin-left: 20px;
 }
-.container,
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 960px;
+  width: 1140px;
 }
 .span12 {
   width: 940px;
@@ -683,7 +658,7 @@ a:focus {
   }
 }
 @media (max-width: 767px) {
-  body {
+  .container {
     padding-left: 20px;
     padding-right: 20px;
   }
